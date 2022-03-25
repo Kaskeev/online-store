@@ -1,0 +1,22 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid rgb(202, 199, 199);
+  border-bottom: 1px solid rgb(202, 198, 198);
+  padding: 10px;
+}
+.navbar-item {
+  color: #231f20;
+  font-size: 0.95em;
+  font-weight: 400px;
+  letter-spacing: 1px;
+  margin: 5px 15px;
+}
+.navbar-item-active {
+  margin: 5px 15px;
+  color: black;
+  border-bottom: 2px solid grey;
+}
+a:hover {
+  color: #231f20;
+}

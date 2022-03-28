@@ -1,5 +1,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Details from "./components/Details/Details";
+import EditProduct from "./components/EditProduct/EditProduct";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
@@ -19,12 +21,22 @@ const Routing = () => {
       element: <ProductList />,
       id: 2,
     },
+    {
+      link: "/products/:id",
+      element: <Details />,
+      id: 3,
+    },
   ];
   let ADMIN_ROUTES = [
     {
       link: "/admin",
       element: <AdminPages />,
       id: 1,
+    },
+    {
+      link: "/edit/:id",
+      element: <EditProduct />,
+      id: 2,
     },
   ];
   return (
